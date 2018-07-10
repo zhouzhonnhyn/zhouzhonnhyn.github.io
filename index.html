@@ -70,8 +70,19 @@
                 case 6:
                     alert("不跟你吵架，会撒娇 会卖萌");
                     break;
-                default:
+                case 7:
                     alert("答应我吧");
+                    break;
+                case 8:
+                    alert("不管你答不答应，你已经是我的人了！");
+                    $(".question").addClass('hide');
+            		$("#success").removeClass('hide');
+            		ok=true;
+                    break;
+                default:
+                    $(".question").addClass('hide');
+            		$("#success").removeClass('hide');
+            		ok=true;
             }
             i++;
         });
